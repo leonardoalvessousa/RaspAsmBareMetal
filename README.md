@@ -1,4 +1,4 @@
-# Raspberry Pi (RISC-ARM)
+![Texto Alternativo](https://raw.githubusercontent.com/leonardoalvessousa/Line_regist/refs/heads/main/linebanner.jpg)
 
 O presente material, disponibilizado no repositório GitHub, foi elaborado para complementar o estudo da disciplina de Microprocessadores, direcionado a estudantes de Engenharia da Computação e áreas correlatas. O objetivo principal é proporcionar um aprofundamento prático dos conceitos teóricos abordados em sala de aula, através da aplicação em projetos reais. O foco principal do material reside na linguagem assembly para a arquitetura RISC-ARM, amplamente utilizada em plataformas como o Raspberry Pi, que serve como um exemplo prático de sua aplicação.
 
