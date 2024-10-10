@@ -1,4 +1,4 @@
-![[RPIamb.jpg]]
+![RPIamb.jpg](https://raw.githubusercontent.com/leonardoalvessousa/RaspAsmBareMetal/refs/heads/main/Aula%20Zero/RPIamb.jpg)
 
 
 >Este material detalha a configuração do ambiente de desenvolvimento em seu computador para projetos "Bare Metal" voltado o Raspberry Pi.
@@ -98,7 +98,7 @@ sudo apt-get install arm-none-eabi-gdb
 
 
 ## ✒️ Autor
-    @leonardoalvessousa
+🐈‍⬛ @leonardoalvessousa
   
 ## 🎁 Expressões de gratidão
 
