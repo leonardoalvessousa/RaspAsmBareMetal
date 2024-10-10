@@ -4,3 +4,20 @@ O presente material, disponibilizado no repositório GitHub, foi elaborado para 
 
 > [!CAUTION]
 > Este material explora o desenvolvimento em Bare Metal para a plataforma Raspberry Pi, o que significa que trabalharemos diretamente com o hardware, utilizando a linguagem assembly para a arquitetura RISC-ARM para controlar o funcionamento da placa, sem a utilização de sistemas operacionais como Linux ou outros.
+
+## 😼 Autor
+
+ 🐈‍⬛ @leonardoalvessousa
+
+## 😼 Colaboradores
+
+## 📄 Licença
+
+   >MIT license
+
+## 🎁 Expressões de gratidão
+
+* Conte a outras pessoas sobre este projeto 📢;
+* Convide alguém da equipe para uma cerveja 🍺;
+* Um agradecimento publicamente 🫂;
+* etc.
