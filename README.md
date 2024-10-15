@@ -9,8 +9,6 @@ O presente material, disponibilizado no repositório GitHub, foi elaborado para 
 
  🐈‍⬛ @leonardoalvessousa
 
-## 😼 Colaboradores
-
 ## 📄 Licença
 
    >MIT license
