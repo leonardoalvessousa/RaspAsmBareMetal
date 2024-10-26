@@ -90,15 +90,19 @@ sudo apt-get install arm-none-eabi-gdb
 ```
 
 
-## ✒️ Autor
+## ## 😼 Autor
+
 🐈‍⬛ @leonardoalvessousa
-  
+
+## 📄 Licença
+
+> MIT license
+
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide o autor para uma cerveja 🍺;
-* Um agradecimento publicamente ou faça a citação 🫂;
-* etc.
-
+- Conte a outras pessoas sobre este projeto 📢;
+- Convide o autor para uma cerveja 🍺;
+- Um agradecimento publicamente ou citação 🫂;
+- etc.
 
 ---
