@@ -103,8 +103,8 @@ sudo apt-get install arm-none-eabi-gdb
 ## 🎁 Expressões de gratidão
 
 * Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
+* Convide o autor para uma cerveja 🍺;
+* Um agradecimento publicamente ou faça a citação 🫂;
 * etc.
 
 
