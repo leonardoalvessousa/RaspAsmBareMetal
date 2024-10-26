@@ -1,5 +1,5 @@
+![Texto Alternativo](https://raw.githubusercontent.com/leonardoalvessousa/RaspAsmBareMetal/refs/heads/main/Aula%201/rpiBareBanner.jpg)
 
-![Texto Alternativo](https://raw.githubusercontent.com/leonardoalvessousa/RaspAsmBareMetal/refs/heads/main/rpiIMG.jpg)
 ## Bare Metal!
 
 >Para iniciar a jornada no mundo do Bare Metal com o Raspberry Pi 3 Model B, é crucial entender que, apesar de não precisarmos de um sistema operacional completo, alguns arquivos essenciais são necessários para que nosso código em Assembly funcione. 
@@ -47,7 +47,7 @@ start.elf
 - **Carregar o código em Assembly**:  Carrega o seu código em Assembly, que é o coração do seu projeto Bare Metal!
 - **Transferir o controle para o seu código**: Após carregar o seu código, o `start.elf` transfere o controle para ele, permitindo que o seu código execute as instruções que você definiu.
 
-## ## 😼 Autor
+## 😼 Autor
 
 🐈‍⬛ @leonardoalvessousa
 
