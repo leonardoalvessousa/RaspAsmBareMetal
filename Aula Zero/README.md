@@ -90,7 +90,7 @@ sudo apt-get install arm-none-eabi-gdb
 ```
 
 
-## ## 😼 Autor
+## 😼 Autor
 
 🐈‍⬛ @leonardoalvessousa
 
