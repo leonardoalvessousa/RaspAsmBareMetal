@@ -3,10 +3,6 @@
 
 >Este material detalha a configuração do ambiente de desenvolvimento em seu computador para projetos "Bare Metal" voltado o Raspberry Pi.
 
- > [!NOTE]
-> No contexto do Raspberry Pi, "Bare Metal" significa que você está trabalhando diretamente com o hardware do Raspberry Pi, sem a camada de abstração de um sistema operacional completo como Ubuntu.
-
-
 ## 🚀 Vamos começar!
 
 Antes de tudo, vamos verificar se sua distribuição Linux já possui os pré-requisitos para trabalhar com o Raspberry Pi usando ASM ARM.
@@ -25,9 +21,6 @@ vim --version
 >VIM - Vi IMproved 9.0 (2022 Jun 28, compiled May 04 2023 10:24:44)
 
 ### 🔧 Resolvendo os pré-requisitos
-
-Esses pré-requisitos serão úteis não apenas para esta prática, mas também para futuras demonstrações. Vamos aproveitar e instalá-los agora mesmo no terminal!
-
 
 ###### GCC (Compilador)
 
