@@ -11,7 +11,7 @@ Este material, disponível no repositório GitHub, foi elaborado para complement
 
 ## 📄 Licença
 
-   >MIT license
+   >GNU GENERAL PUBLIC LICENSE Version 3
 
 ## 🎁 Expressões de gratidão
 
