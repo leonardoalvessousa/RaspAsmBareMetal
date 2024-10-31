@@ -96,7 +96,7 @@ sudo apt-get install arm-none-eabi-gdb
 
 ## 📄 Licença
 
-> MIT license
+> GNU GENERAL PUBLIC LICENSE Version 3
 
 ## 🎁 Expressões de gratidão
 
