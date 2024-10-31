@@ -94,10 +94,6 @@ sudo apt-get install arm-none-eabi-gdb
 
 🐈‍⬛ @leonardoalvessousa
 
-## 📄 Licença
-
-> GNU GENERAL PUBLIC LICENSE Version 3
-
 ## 🎁 Expressões de gratidão
 
 - Conte a outras pessoas sobre este projeto 📢;
