@@ -5,7 +5,7 @@
 >Para iniciar a jornada no mundo do Bare Metal com o Raspberry Pi 3 Model B, é crucial entender que, apesar de não precisarmos de um sistema operacional completo, alguns arquivos essenciais são necessários para que nosso código em Assembly funcione. 
 
 > [!NOTE]
-> Esses arquivos essenciais para o Bare Metal podem ser encontrados na pasta `Arquivos`. No entanto, se você não se sentir confortável com essa localização, existe uma solução simples e segura: a própria Raspberry Pi OS!
+> Esses arquivos essenciais para o Bare Metal podem ser encontrados na pasta `Arquivos`. No entanto, se você não se sentir confortável em baixar arquivos de um repositório no GitHub, existe uma solução simples e segura: A própria Raspberry Pi OS!
 ### Depenando o Raspbian!
 
 O termo "Depenando" é, de fato, bastante icônico e descreve perfeitamente o que faremos a seguir. Essa "depenação" nos permitirá ter um sistema enxuto e otimizado, pronto para receber nossos algoritmos em Assembly e explorar todo o potencial do hardware. 
