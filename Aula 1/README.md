@@ -53,7 +53,7 @@ start.elf
 
 ## 📄 Licença
 
-> GNU GENERAL PUBLIC LICENSE Version 3
+> General Public License (GPL)
 
 ## 🎁 Expressões de gratidão
 
