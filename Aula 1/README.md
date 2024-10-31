@@ -53,7 +53,8 @@ start.elf
 
 ## 📄 Licença
 
-> MIT license
+> GNU GENERAL PUBLIC LICENSE Version 3
+
 ## 🎁 Expressões de gratidão
 
 - Conte a outras pessoas sobre este projeto 📢;
