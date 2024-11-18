@@ -310,7 +310,12 @@ arm-none-eabi-objcopy NAMES_ELF -O binary NAME_BIN
 
 ## 😼 Autor
     @leonardoalvessousa
-  
+    
+## 📄 Licença
+
+   >GNU GENERAL PUBLIC LICENSE Version 3
+
+
 ## 🎁 Expressões de gratidão
 
 * Conte a outras pessoas sobre este projeto 📢;
