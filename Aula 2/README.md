@@ -1,3 +1,5 @@
+![Texto Alternativo](https://raw.githubusercontent.com/leonardoalvessousa/RaspAsmBareMetal/refs/heads/main/Aula%202/bannerPrimeiroProjeto.jpg)
+
 ## Prática I
 
 > Neste artigo, mergulharemos no mundo da programação em Assembly para Raspberry Pi, explorando um projeto prático e divertido: controlar um LED através da pressão de um botão!
