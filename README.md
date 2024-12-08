@@ -12,10 +12,9 @@ Este material, disponível no repositório GitHub, foi elaborado para complement
 ## 📄 Licença
 
    >GNU GENERAL PUBLIC LICENSE Version 3
-
+>
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide o autor para uma cerveja 🍺;
-* Um agradecimento publicamente ou citação 🫂;
-* etc.
+- Conte a outras pessoas sobre este projeto 📢;
+- Pague uma cerva para o autor **[🍺](https://nubank.com.br/cobrar/f7g6w/6755dd2c-8e3d-4c14-9976-b1afefc8ae07)**;
+
