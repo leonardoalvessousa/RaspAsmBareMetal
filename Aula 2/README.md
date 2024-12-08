@@ -318,7 +318,5 @@ arm-none-eabi-objcopy NAMES_ELF -O binary NAME_BIN
 
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
+- Conte a outras pessoas sobre este projeto 📢;
+- Pague uma cerva para o autor **[🍺](https://nubank.com.br/cobrar/f7g6w/6755dd2c-8e3d-4c14-9976-b1afefc8ae07)**;
