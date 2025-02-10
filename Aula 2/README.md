@@ -6,15 +6,21 @@
 
 Neste artigo, mergulharemos no mundo da programação em Assembly para Raspberry Pi, explorando um projeto prático e divertido: controlar um LED através da pressão de um botão!
 
+---
+
+## Prática I
+
+> Neste artigo, mergulharemos no mundo da programação em Assembly para Raspberry Pi, explorando um projeto prático e divertido: controlar um LED através da pressão de um botão!
+
 ### Início do Programa
 
-arm32bits
+```arm32bits
 .section .text
 .globl _start
 
 _start:
     mov sp, #0x8000 
-
+```
 
 - *.globl _start*: Define o símbolo _start como global, tornando-o o ponto de entrada do programa. Em Assembly, isso também é chamado de "label".
 - *_start*: Início da label.
@@ -24,7 +30,7 @@ _start:
 
 Para melhor organização, os símbolos foram divididos em três blocos. Eles funcionam como constantes no algoritmo.
 
-arm32bits
+```arm32bits
 @=========================
 @ Primeiro bloco de símbolos
 @=========================
@@ -57,7 +63,7 @@ mask .req r3
 i .req r4			
 j .req r5			
 return .req r0
-
+```
 
 #### Explicação dos Blocos
 
@@ -79,7 +85,7 @@ return .req r0
 
 ### Configuração dos GPIOs
 
-arm32bits
+```arm32bits
 @=================================================
 @ Configurar o GPIO 17 como entrada
 @=================================================
@@ -93,14 +99,14 @@ str mask, [base, offset]
 ldr mask, =SET_20_27
 ldr offset, =GPFSEL2
 str mask, [base, offset]
-
+```
 
 - *GPIO 17 como entrada*: Limpa os bits 21-23 no registrador GPFSEL1.
 - *GPIOs 20-27 como saída*: Define os bits 20-27 no registrador GPFSEL2.
 
 ### Loop Principal
 
-arm32bits
+```arm32bits
 input_loop:
     mov r0, #30000		
     bl Wait			
@@ -114,7 +120,7 @@ input_loop:
     beq turn_on_indicator
 
     b input_loop
-
+```
 
 - *input_loop*: Loop principal que verifica o estado do GPIO 17.
 - *Wait*: Função que cria um atraso de 30.000 microssegundos.
@@ -125,7 +131,7 @@ input_loop:
 
 #### getInput
 
-arm32bits
+```arm32bits
 getInput:
     push {r7, lr}
     mov r7, sp
@@ -151,13 +157,13 @@ getInput:
     pop {r7, lr}
     add sp, sp, #4		
     mov pc, lr
-
+```
 
 - Lê o estado do pino GPIO especificado e retorna 1 (alto) ou 0 (baixo).
 
 #### turn_on_indicator e turn_off_indicator
 
-arm32bits
+```arm32bits
 @=============================
 @ Rotina II: Acender o LED
 @=============================
@@ -205,6 +211,7 @@ turn_off:
     str mask, [base, offset]
     mov pc, lr
 
+```
 
 - *turn_on*: Acende um pino GPIO específico.
 - *turn_off*: Apaga um pino GPIO específico.
