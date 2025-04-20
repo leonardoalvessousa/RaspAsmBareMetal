@@ -1,102 +1,131 @@
 ![RPIamb.jpg](https://raw.githubusercontent.com/leonardoalvessousa/RaspAsmBareMetal/refs/heads/main/Aula%20Zero/RPIamb.jpg)
 
+---
 
->Este material detalha a configuração do ambiente de desenvolvimento em seu computador para projetos "Bare Metal" voltado o Raspberry Pi.
+## ⚙️ Aula Zero – Configurando o Ambiente
+
+> Este guia mostra como preparar seu ambiente Linux para desenvolver projetos *Bare Metal* com Raspberry Pi usando Assembly ARM.
+
+---
 
 ## 🚀 Vamos começar!
 
-Antes de tudo, vamos verificar se sua distribuição Linux já possui os pré-requisitos para trabalhar com o Raspberry Pi usando ASM ARM.
+Primeiro, vamos conferir se você já tem os pacotes básicos instalados.
 
-```
+### Verificando GCC
+
+```bash
 gcc --version
 ```
-> Saída:
-> gcc (Debian 12.2.0-14) 12.2.0
-   Copyright (C) 2022 Free Software Foundation, Inc.
-   
+**Saída esperada:**
 ```
+gcc (Debian 12.2.0-14) 12.2.0
+```
+
+### Verificando VIM
+
+```bash
 vim --version
 ```
->Saída:
->VIM - Vi IMproved 9.0 (2022 Jun 28, compiled May 04 2023 10:24:44)
-
-### 🔧 Resolvendo os pré-requisitos
-
-###### GCC (Compilador)
-
-O GCC (GNU Compiler Collection) é um compilador de código aberto fundamental para o Linux. Ele permite que você transforme código-fonte escrito em linguagens como C, C++ e Fortran em programas executáveis que podem ser executados no sistema.
-
+**Saída esperada:**
 ```
+VIM - Vi IMproved 9.0
+```
+
+---
+
+## 🔧 Instalando os pré-requisitos
+
+### 🧱 GCC (Compilador)
+
+O GCC é essencial para compilar programas no Linux.
+
+```bash
 sudo apt install build-essential
-```
-
-```
 sudo apt-get install manpages-dev
 ```
 
-```
+Depois, confirme a instalação:
+
+```bash
 gcc --version
 ```
 
+---
 
-###### Make
+### 🔄 Make
 
-O Make é uma ferramenta de linha de comando no Linux que automatiza o processo de construção de softwares, gerenciando a compilação e a ligação de arquivos de código-fonte para criar um programa executável.
+O `make` automatiza a compilação de projetos. Ele já vem com o `build-essential`, então nada extra é necessário.
 
 > [!CAUTION]
-> O make vem padrão junto a instalação do GCC.
+> Se preferir garantir:
+> ```bash
+> sudo apt install make
+> ```
 
+---
 
-###### VIM (Nosso bloco de notas)
+### 📝 VIM (Editor de texto)
 
-O Vim é um editor de texto poderoso e altamente personalizável, amplamente utilizado no Pinguim.
+Editor rápido e prático para editar seus arquivos `.s`.
 
-```
+```bash
 sudo apt install vim
 ```
 
+---
 
-###### arm-none-eabi
+### 🛠️ arm-none-eabi
 
-É um prefixo de ferramenta usado para identificar um conjunto de ferramentas de desenvolvimento de software (compilador, linker, etc.) que são projetadas para gerar código para a arquitetura ARM, especificamente para sistemas embarcados que não possuem um sistema operacional completo (como o Raspberry Pi).
+Esse conjunto de ferramentas compila código para sistemas ARM sem sistema operacional — perfeito para *bare metal* no Raspberry Pi.
 
-```
+#### 1. Remover versões antigas
+
+```bash
 sudo apt-get remove binutils-arm-none-eabi gcc-arm-none-eabi
 ```
 
-```
-sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
-```
+#### 2. Adicionar repositório (Ubuntu/Debian)
 
-```
+```bash
+sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
 sudo apt-get update
 ```
- 
-```
-sudo apt-get install gcc-arm-none-eabi
-```
 
-```
+#### 3. Instalar compilador e depurador
+
+```bash
+sudo apt-get install gcc-arm-none-eabi
 sudo apt-get install gdb-arm-none-eabi
 ```
 
-> Manjaro
-```
-sudo apt-get install arm-none-eabi-gcc
+#### 💡 Usuários Manjaro
+
+```bash
+sudo pacman -S arm-none-eabi-gcc
+sudo pacman -S arm-none-eabi-gdb
 ```
 
-```
-sudo apt-get install arm-none-eabi-gdb
+---
+
+## ✅ Verifique a instalação
+
+```bash
+arm-none-eabi-gcc --version
+arm-none-eabi-gdb --version
 ```
 
+Se ambos responderem com as versões corretas, você está pronto para codar!
+
+---
 
 ## 😼 Autor
 
-🐈‍⬛ @leonardoalvessousa
-
-## 🎁 Expressões de gratidão
-
-- Conte a outras pessoas sobre este projeto 📢;
-- Pague uma cerveja para o autor **[🍺](https://nubank.com.br/cobrar/f7g6w/6755dd2c-8e3d-4c14-9976-b1afefc8ae07)**;
+🐈‍⬛ [@leonardoalvessousa](https://github.com/leonardoalvessousa)
 
 ---
+
+## 🎁 Apoie o projeto
+
+- Compartilhe com a galera que curte baixo nível 📢  
+- Pague uma cerveja ao autor: [🍺]
