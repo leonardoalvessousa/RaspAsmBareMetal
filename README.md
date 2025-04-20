@@ -1,5 +1,5 @@
 ![BannerProject](https://raw.githubusercontent.com/leonardoalvessousa/RaspAsmBareMetal/refs/heads/main/rpiIMG.jpg)
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15251869.svg)](https://doi.org/10.5281/zenodo.15251869)
 
 ## 🎯 Objetivo
 
