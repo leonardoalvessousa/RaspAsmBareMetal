@@ -6,7 +6,8 @@
 Este material visa reforçar os conceitos de disciplinas como Microprocessadores por meio de projetos práticos utilizando linguagem Assembly para a arquitetura RISC-ARM. A proposta é explorar o controle direto do hardware — programação de baixo nível na essência.
 
 
-[!CAUTION] Este conteúdo aborda desenvolvimento Bare Metal no Raspberry Pi 3 Model B — ou seja, sem sistema operacional. Aqui, você vai programar diretamente o hardware. Pronto para o desafio? Siga as instruções da Aula 1 e comece agora mesmo.
+> [!CAUTION]
+> Este conteúdo aborda desenvolvimento Bare Metal no Raspberry Pi 3 Model B — ou seja, sem sistema operacional. Aqui, você vai programar diretamente o hardware. Pronto para o desafio? Siga as instruções da Aula 1 e comece agora mesmo.
 
 ## 😼 Autor
 
