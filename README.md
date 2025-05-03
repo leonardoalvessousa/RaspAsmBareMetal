@@ -20,5 +20,4 @@ Este material visa reforçar os conceitos de disciplinas como Microprocessadores
 ## 🎁 Expressões de gratidão
 
 - Conte a outras pessoas sobre este projeto 📢;
-- Pague uma cerveja para o autor **[🍺](https://nubank.com.br/cobrar/f7g6w/6755dd2c-8e3d-4c14-9976-b1afefc8ae07)**;
 
