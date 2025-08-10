@@ -2,55 +2,61 @@
 
 ## 🚀 Bare Metal!
 
-Começamos nossa jornada Bare Metal com o Raspberry Pi 3 Model B! Neste ambiente, não usamos um sistema operacional completo — mas sim um conjunto mínimo de arquivos essenciais para executar nosso código Assembly diretamente no hardware.
+We begin our Bare Metal journey with the Raspberry Pi 3 Model B!
+In this environment, we don’t use a full operating system — instead, we rely on a minimal set of essential files to run our Assembly code directly on the hardware.
 
-> [!NOTE]
-> Esses arquivos estão disponíveis na pasta Arquivos do repositório. Alternativamente, você pode extraí-los diretamente do Raspberry Pi OS.
+> \[!NOTE]
+> These files are available in the *Arquivos* (Files) folder of the repository.
+> Alternatively, you can extract them directly from Raspberry Pi OS.
 
-## 🪶 Depenando o Raspbian
+## 🪶 Stripping Down Raspbian
 
-"Depenar" aqui significa otimizar: vamos extrair apenas o que importa do Raspberry Pi OS para rodar nosso código Assembly com agilidade e controle total.
+Here, “stripping down” means optimizing: we’ll extract only what matters from Raspberry Pi OS to run our Assembly code with speed and full control.
 
-### ✅ Pré-requisitos
+### ✅ Prerequisites
 
-- Acesse o site oficial do Raspberry Pi
-- Baixe o instalador e grave o Raspberry Pi OS (32 bits) em um cartão SD.
+* Access the official Raspberry Pi website.
+* Download the installer and flash Raspberry Pi OS (32-bit) to an SD card.
 
-> [!CAUTION]
-> Precisa de ajuda com o instalador? Um guia passo a passo está em desenvolvimento!
+> \[!CAUTION]
+> Need help with the installer? A step-by-step guide is in development!
 
-## 📦 Arquivos essenciais
+## 📦 Essential Files
 
-Após gravar o sistema no cartão SD (ejetado automaticamente), conecte-o novamente e copie os seguintes arquivos da raiz:
+After flashing the system to the SD card (which will be automatically ejected), reconnect it and copy the following files from the root directory:
 
 ### 🧩 bootcode.bin
 
-- Inicializa o hardware básico (memória, CPU, periféricos).
-- Carrega o bootloader.
-- Verifica o cartão SD.
+* Initializes the basic hardware (memory, CPU, peripherals).
+* Loads the bootloader.
+* Checks the SD card.
 
 ### 🧠 fixup.dat
 
-- Define endereços e tamanhos de memória.
-- Configurações como clock e RAM.
+* Defines memory addresses and sizes.
+* Settings such as clock and RAM.
 
 ### 🔧 start.elf
 
-- Prepara o ambiente para execução
-- Carrega e transfere o controle para seu código Assembly
+* Prepares the environment for execution.
+* Loads and hands over control to your Assembly code.
 
-> Esses três arquivos são suficientes para iniciar seu projeto Bare Metal.
+> These three files are enough to start your Bare Metal project.
 
-### 😼 Autor
+### 😼 Author
 
 🐈‍⬛ @leonardoalvessousa
 
-### 📄 Licença
+### 📄 License
 
-Distribuído sob a GNU General Public License v3
+Distributed under the GNU General Public License v3
 
-### 🎁 Apoie o projeto
+### 🎁 Support the Project
 
-    Compartilhe com seus amigos 📢
+```
+Share with your friends 📢
 
-    Pague uma cerveja ao autor 🍺
+Buy the author a beer 🍺
+```
+
+---
