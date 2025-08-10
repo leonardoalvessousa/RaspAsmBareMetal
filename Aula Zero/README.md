@@ -2,50 +2,54 @@
 
 ---
 
-## ⚙️ Aula Zero – Configurando o Ambiente
+## ⚙️ Lesson Zero – Setting Up the Environment
 
-> Este guia mostra como preparar seu ambiente Linux para desenvolver projetos *Bare Metal* com Raspberry Pi usando Assembly ARM.
+> This guide shows how to prepare your Linux environment to develop *Bare Metal* projects for Raspberry Pi using ARM Assembly.
 
 ---
 
-## 🚀 Vamos começar!
+## 🚀 Let’s Get Started!
 
-Primeiro, vamos conferir se você já tem os pacotes básicos instalados.
+First, let’s check if you already have the basic packages installed.
 
-### Verificando GCC
+### Checking GCC
 
 ```bash
 gcc --version
 ```
-**Saída esperada:**
+
+**Expected output:**
+
 ```
 gcc (Debian 12.2.0-14) 12.2.0
 ```
 
-### Verificando VIM
+### Checking VIM
 
 ```bash
 vim --version
 ```
-**Saída esperada:**
+
+**Expected output:**
+
 ```
 VIM - Vi IMproved 9.0
 ```
 
 ---
 
-## 🔧 Instalando os pré-requisitos
+## 🔧 Installing Prerequisites
 
-### 🧱 GCC (Compilador)
+### 🧱 GCC (Compiler)
 
-O GCC é essencial para compilar programas no Linux.
+GCC is essential for compiling programs on Linux.
 
 ```bash
 sudo apt install build-essential
 sudo apt-get install manpages-dev
 ```
 
-Depois, confirme a instalação:
+Then, confirm the installation:
 
 ```bash
 gcc --version
@@ -55,19 +59,20 @@ gcc --version
 
 ### 🔄 Make
 
-O `make` automatiza a compilação de projetos. Ele já vem com o `build-essential`, então nada extra é necessário.
+`make` automates project compilation. It comes with `build-essential`, so no extra steps are needed.
 
-> [!CAUTION]
-> Se preferir garantir:
+> \[!CAUTION]
+> If you want to make sure:
+>
 > ```bash
 > sudo apt install make
 > ```
 
 ---
 
-### 📝 VIM (Editor de texto)
+### 📝 VIM (Text Editor)
 
-Editor rápido e prático para editar seus arquivos `.s`.
+A fast and handy editor for editing your `.s` files.
 
 ```bash
 sudo apt install vim
@@ -77,29 +82,29 @@ sudo apt install vim
 
 ### 🛠️ arm-none-eabi
 
-Esse conjunto de ferramentas compila código para sistemas ARM sem sistema operacional — perfeito para *bare metal* no Raspberry Pi.
+This toolchain compiles code for ARM systems without an operating system — perfect for *bare metal* Raspberry Pi development.
 
-#### 1. Remover versões antigas
+#### 1. Remove old versions
 
 ```bash
 sudo apt-get remove binutils-arm-none-eabi gcc-arm-none-eabi
 ```
 
-#### 2. Adicionar repositório (Ubuntu/Debian)
+#### 2. Add repository (Ubuntu/Debian)
 
 ```bash
 sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
 sudo apt-get update
 ```
 
-#### 3. Instalar compilador e depurador
+#### 3. Install compiler and debugger
 
 ```bash
 sudo apt-get install gcc-arm-none-eabi
 sudo apt-get install gdb-arm-none-eabi
 ```
 
-#### 💡 Usuários Manjaro
+#### 💡 Manjaro users
 
 ```bash
 sudo pacman -S arm-none-eabi-gcc
@@ -108,24 +113,26 @@ sudo pacman -S arm-none-eabi-gdb
 
 ---
 
-## ✅ Verifique a instalação
+## ✅ Verify the Installation
 
 ```bash
 arm-none-eabi-gcc --version
 arm-none-eabi-gdb --version
 ```
 
-Se ambos responderem com as versões corretas, você está pronto para codar!
+If both respond with the correct versions, you’re ready to start coding!
 
 ---
 
-## 😼 Autor
+## 😼 Author
 
 🐈‍⬛ [@leonardoalvessousa](https://github.com/leonardoalvessousa)
 
 ---
 
-## 🎁 Apoie o projeto
+## 🎁 Support the Project
 
-- Compartilhe com a galera que curte baixo nível 📢  
-- Pague uma cerveja ao autor: [🍺]
+* Share with fellow low-level enthusiasts 📢
+* Buy the author a beer: \[🍺]
+
+---
