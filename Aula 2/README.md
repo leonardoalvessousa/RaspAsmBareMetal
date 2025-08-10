@@ -2,13 +2,13 @@
 
 ---
 
-## 💡 Prática I – Primeiro Projeto
+## 💡 Practice I – First Project
 
-Neste exercício prático com Assembly para Raspberry Pi, você vai controlar um LED utilizando um botão físico — uma introdução divertida e direta ao mundo Bare Metal!
+In this hands-on exercise with Assembly for Raspberry Pi, you’ll control an LED using a physical button — a fun and direct introduction to the Bare Metal world!
 
 ---
 
-## 🔧 Início do Programa
+## 🔧 Program Start
 
 ```armasm
 .section .text
@@ -18,18 +18,18 @@ _start:
     mov sp, #0x8000 
 ```
 
-- `.globl _start`: Define o ponto de entrada do programa.
-- `_start`: Label principal.
-- `mov sp, #0x8000`: Inicializa a pilha.
+* `.globl _start`: Defines the program entry point.
+* `_start`: Main label.
+* `mov sp, #0x8000`: Initializes the stack.
 
 ---
 
-## 📌 Símbolos e Constantes
+## 📌 Symbols and Constants
 
-Os símbolos estão organizados em três blocos, facilitando a leitura e manutenção do código.
+The symbols are organized into three blocks for easier reading and code maintenance.
 
 ```armasm
-@ Bloco 1 – Endereços e registradores
+@ Block 1 – Addresses and registers
 .equ BASE_ADDR, 0x3f200000 	
 .equ GPFSEL0, 0x0
 .equ GPFSEL1, 0x04		
@@ -38,7 +38,7 @@ Os símbolos estão organizados em três blocos, facilitando a leitura e manuten
 .equ GPCLR0, 0x28		
 .equ GPLEV0, 0x34		
 
-@ Bloco 2 – Máscaras e delays
+@ Block 2 – Masks and delays
 .equ CLEAR_BITS21_23, 0xFF1FFFFF 
 .equ SET_20_27, 0x249249		
 .equ SET_BIT27, 0x8000000	
@@ -46,7 +46,7 @@ Os símbolos estão organizados em três blocos, facilitando a leitura e manuten
 .equ quarter_second, 0x3d090	
 .equ eighth_second, 0x1e848
 
-@ Bloco 3 – Aliases de registradores
+@ Block 3 – Register aliases
 base .req r1			
 ldr base, =BASE_ADDR		
 
@@ -59,15 +59,15 @@ return .req r0
 
 ---
 
-## ⚙️ Configuração dos GPIOs
+## ⚙️ GPIO Configuration
 
 ```armasm
-@ GPIO 17 como entrada
+@ GPIO 17 as input
 ldr offset, =GPFSEL1
 ldr mask, =CLEAR_BITS21_23
 str mask, [base, offset]
 
-@ GPIOs 20–27 como saída
+@ GPIOs 20–27 as output
 ldr mask, =SET_20_27
 ldr offset, =GPFSEL2
 str mask, [base, offset]
@@ -75,7 +75,7 @@ str mask, [base, offset]
 
 ---
 
-## 🔁 Loop Principal
+## 🔁 Main Loop
 
 ```armasm
 input_loop:
@@ -93,11 +93,11 @@ input_loop:
     b input_loop
 ```
 
-- Cria um delay, lê o botão e liga/desliga o LED com base no valor retornado.
+* Creates a delay, reads the button, and turns the LED on or off based on the returned value.
 
 ---
 
-## 🧠 Funções Auxiliares
+## 🧠 Auxiliary Functions
 
 ### 🔍 `getInput`
 
@@ -129,11 +129,11 @@ getInput:
     mov pc, lr
 ```
 
-- Lê o pino de entrada e retorna `1` se pressionado, `0` caso contrário.
+* Reads the input pin and returns `1` if pressed, `0` otherwise.
 
 ---
 
-### 💡 Acender/Apagar o LED
+### 💡 Turn LED On/Off
 
 ```armasm
 turn_on_indicator:
@@ -153,7 +153,7 @@ turn_off_indicator:
 
 ---
 
-### ⚡ turn_on / turn_off (qualquer pino)
+### ⚡ turn\_on / turn\_off (any pin)
 
 ```armasm
 turn_on:
@@ -173,43 +173,45 @@ turn_off:
 
 ---
 
-## 🛠️ Gerando o Arquivo `.img`
+## 🛠️ Generating the `.img` File
 
-Transforme seu código em um arquivo executável para o Raspberry Pi:
+Convert your code into an executable file for the Raspberry Pi:
 
 ```bash
-# 1. Compilar Assembly para objeto
+# 1. Assemble Assembly into object
 arm-none-eabi-as -g -o output.o input.s
 
-# 2. Linkar objeto para ELF
+# 2. Link object into ELF
 arm-none-eabi-ld output.o -o output.elf
 
-# 3. Converter ELF para binário
+# 3. Convert ELF into binary
 arm-none-eabi-objcopy output.elf -O binary kernel.img
 ```
 
-> Copie o `kernel.img` para a raiz do cartão SD.
+> Copy `kernel.img` to the root of the SD card.
 
-> [!CAUTION]
-> ⚠️ **Evite o aviso:**  
-> `"Warning: end of file not at end of a line; newline inserted"`  
-> Finalize seu código com uma quebra de linha.
+> \[!CAUTION]
+> ⚠️ **Avoid this warning:**
+> `"Warning: end of file not at end of a line; newline inserted"`
+> End your code with a newline.
 
 ---
 
-## 😼 Autor
+## 😼 Author
 
 🐈‍⬛ [@leonardoalvessousa](https://github.com/leonardoalvessousa)
 
 ---
 
-## 📄 Licença
+## 📄 License
 
-Distribuído sob a [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html)
+Distributed under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ---
 
-## 🎁 Apoie o projeto
+## 🎁 Support the Project
 
-- Compartilhe com seus amigos 📢  
-- Pague uma cerveja ao autor [🍺]
+* Share with your friends 📢
+* Buy the author a beer \[🍺]
+
+---
